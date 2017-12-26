@@ -1,0 +1,7 @@
+version: "3.3"
+services:
+  db:
+    image: rethinkdb:2.3.6
+    ports:
+      - 28015:28015
+      - 8080:8080

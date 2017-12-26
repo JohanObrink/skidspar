@@ -1,0 +1,45 @@
+{
+  "name": "skidspar",
+  "version": "0.0.0",
+  "description": "API for skidspar",
+  "main": "lib/server.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "import": "node lib/workers/index.js",
+    "test": "eslint src/**/*.js test/**/*.js && mocha test/**/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/JohanObrink/skidspar.git"
+  },
+  "author": "Johan Öbrink <johan.obrink@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JohanObrink/skidspar/issues"
+  },
+  "homepage": "https://github.com/JohanObrink/skidspar#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^4.14.0",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "gulp": "^3.9.1",
+    "gulp-eslint": "^4.0.0",
+    "gulp-mocha": "^4.3.1",
+    "mocha": "^4.0.1",
+    "proxyquire": "^1.8.0",
+    "sinon": "^4.1.3",
+    "sinon-chai": "^2.14.0"
+  },
+  "dependencies": {
+    "node-fetch": "^1.7.3",
+    "rethinkdbdash": "^2.3.31",
+    "xml2json": "^0.11.0"
+  }
+}
